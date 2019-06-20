@@ -12,6 +12,7 @@
 */
 
 Route::get('/', ['uses' => 'ReservationController@index', 'as' => 'reservation.index']);
+Route::get('/listAvailable', ['uses' => 'ReservationConstroller@list', 'as' => 'reservation.list']);
 
 Route::get('/test/{name}', 'CalculatorController@index');
 
